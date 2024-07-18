@@ -1,19 +1,28 @@
-export function Experience(props) {
+export function Experience({
+  startDate = "",
+  endDate = "",
+  location = "",
+  position = "",
+  company = "",
+  description = "",
+}) {
   return (
     <li className="job">
       <div className="job-info">
         <div className="job-date">
-          <p>{props.startDate} - {props.endDate}</p>
-          <p>{props.location}</p>
+          <p>
+            {startDate} - {endDate}
+          </p>
+          <p>{location}</p>
         </div>
         <div className="job-position">
           <div>
-            <h4>{props.position}</h4>
-            <p>{props.company}</p>
+            <h4>{position}</h4>
+            <p>{company}</p>
           </div>
-          <p className="job-description">{props.description}</p>
+          <p className="job-description">{description}</p>
         </div>
       </div>
     </li>
-  )
+  );
 }
