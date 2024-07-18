@@ -1,4 +1,4 @@
-import '../styles/form.css';
+import "../styles/form.css";
 
 export function GeneralForm() {
   return (
@@ -18,7 +18,11 @@ export function GeneralForm() {
         placeholder="Enter your email"
       />
       <label htmlFor="phone">Phone</label>
-      <input type="text" value="(123)456-7890" placeholder="Enter your email" />
+      <input
+        type="text"
+        value="(123)456-7890"
+        placeholder="Enter your phone number"
+      />
     </form>
   );
 }

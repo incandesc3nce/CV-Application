@@ -1,4 +1,4 @@
-import '../styles/form.css';
+import "../styles/form.css";
 
 export function ExperienceForm() {
   return (
@@ -15,7 +15,13 @@ export function ExperienceForm() {
       </div>
       <div className="input-field">
         <label htmlFor="exp_location">Location</label>
-        <input type="text" name="location" id="exp_location" placeholder="USA" required />
+        <input
+          type="text"
+          name="location"
+          id="exp_location"
+          placeholder="USA"
+          required
+        />
       </div>
       <div className="input-field">
         <label htmlFor="position">Position Title</label>
