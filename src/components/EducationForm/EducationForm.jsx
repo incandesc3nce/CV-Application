@@ -2,7 +2,7 @@ import '../styles/form.css';
 
 export function EducationForm() {
   return (
-    <form className="education-form">
+    <form className="education-form hidden">
       <div className="input-field">
         <label htmlFor="school">School Name</label>
         <input
