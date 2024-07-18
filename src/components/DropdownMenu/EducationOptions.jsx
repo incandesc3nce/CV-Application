@@ -1,22 +1,34 @@
 import { useState } from "react";
 import { EducationForm } from "../EducationForm/EducationForm";
 
-export function AddEducation({ educations, setEducations }) {
+export function AddEducation({
+  educations,
+  setEducations,
+  selected,
+  setSelected,
+}) {
   return (
     <li>
       <button
-        onClick={() =>
+        onClick={() => {
+          const newEducation = {
+            school: "",
+            degree: "",
+            startDate: "",
+            endDate: "",
+            location: "",
+          }
+          
           setEducations([
             ...educations,
-            {
-              school: "",
-              degree: "",
-              startDate: "",
-              endDate: "",
-              location: "",
-            },
-          ])
-        }>
+            newEducation,
+          ]);
+          document.querySelector(".education-form").classList.remove("hidden");
+          document.querySelector(".options").classList.add("hidden");
+          setSelected(
+            newEducation
+          )
+        }}>
         + Add Education
       </button>
     </li>
@@ -40,7 +52,12 @@ export function EducationOptions({ educations = [], setEducations }) {
             <button onClick={handleSelect}>{education.school}</button>
           </li>
         ))}
-        <AddEducation educations={educations} setEducations={setEducations} />
+        <AddEducation
+          educations={educations}
+          setEducations={setEducations}
+          selected={selectedEducation}
+          setSelected={setSelectedEducation}
+        />
       </ul>
       <EducationForm
         education={educations}
