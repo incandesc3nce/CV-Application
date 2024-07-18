@@ -9,7 +9,7 @@ export function Education({
     <li className="degree">
       <div className="degree-date">
         <p>
-          {startDate} - {endDate}
+          {startDate} {startDate && endDate ? "–" : ""} {endDate}
         </p>
         <p>{location}</p>
       </div>
