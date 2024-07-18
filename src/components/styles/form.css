@@ -1,0 +1,49 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 400px;
+}
+
+input, textarea {
+  border-radius: 15px;
+  border: none;
+  background-color: #e5e5e5;
+
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input {
+  max-width: 100%;
+  padding: 0.5rem;
+}
+
+input:focus {
+  outline: 2px solid #3f87ec;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.date-form {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.date-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  max-width: 190px;
+}
+
+textarea {
+  min-height: 200px;
+  max-width: 400px;
+}
