@@ -71,10 +71,15 @@ main {
   font-size: 1.1rem;
 }
 
+.degree-date {
+  min-width: 170px;
+}
+
 .degree, .job {
   width: 100%;
   display: flex;
   gap: 2rem;
+  min-height: 53px;
 }
 
 .job {
