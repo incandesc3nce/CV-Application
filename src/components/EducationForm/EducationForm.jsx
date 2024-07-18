@@ -60,10 +60,6 @@ export function EducationForm() {
           required
         />
       </div>
-      <div className="input-field">
-        <label htmlFor="description">Description</label>
-        <textarea name="description" id="description" required></textarea>
-      </div>
       <button type="submit" onClick={handleSubmit}>
         Add
       </button>
