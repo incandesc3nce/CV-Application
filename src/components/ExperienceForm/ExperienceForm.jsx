@@ -14,13 +14,12 @@ export function ExperienceForm() {
         />
       </div>
       <div className="input-field">
-        <label htmlFor="exp_location">Location</label>
+        <label htmlFor="exp_location">Location <i>(optional)</i></label>
         <input
           type="text"
           name="location"
           id="exp_location"
           placeholder="USA"
-          required
         />
       </div>
       <div className="input-field">
