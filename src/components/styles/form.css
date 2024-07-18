@@ -42,7 +42,7 @@ input:focus {
   flex-direction: column;
   gap: 0.25rem;
 
-  max-width: 190px;
+  max-width: 150px;
 }
 
 textarea {

@@ -2,16 +2,48 @@
   max-width: 400px;
   width: 100%;
 
-  background-color: #f3f4f6;
+  background-color: #fff;
   border: none;
   border-radius: 15px;
   padding: 0.5rem;
+
+  cursor: pointer;
 }
 
 .dropdown-form {
-  margin-top: 1rem;
+  background-color: #fff;
+  
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 400px;
+}
+
+.education-form, .experience-form {
+  animation: fade-in 0.2s ease-out;
+  padding: 1rem;
 }
 
 .hidden {
   display: none;
+}
+
+.plain-corners {
+  border-radius: 20px 20px 0 0!important;
+}
+
+
+@keyframes fade-in {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+    background-color: #f3f4f6;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    background-color: #fff;
+  }
 }

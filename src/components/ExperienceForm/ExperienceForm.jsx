@@ -36,11 +36,23 @@ export function ExperienceForm() {
       <div className="date-form">
         <div className="date-input">
           <label htmlFor="startDate">Start Date</label>
-          <input type="text" name="startDate" id="startDate" required />
+          <input
+            type="text"
+            name="startDate"
+            id="startDate"
+            placeholder="mm/yyyy"
+            required
+          />
         </div>
         <div className="date-input">
           <label htmlFor="endDate">End Date</label>
-          <input type="text" name="endDate" id="endDate" required />
+          <input
+            type="text"
+            name="endDate"
+            id="endDate"
+            placeholder="mm/yyyy"
+            required
+          />
         </div>
       </div>
       <div className="input-field">
@@ -49,6 +61,7 @@ export function ExperienceForm() {
         </label>
         <textarea name="description" id="description" />
       </div>
+      <button type="submit">Add</button>
     </form>
   );
 }
