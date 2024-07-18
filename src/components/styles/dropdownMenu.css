@@ -27,12 +27,28 @@
 }
 
 .hidden {
-  display: none;
+  display: none!important;
 }
 
 .plain-corners {
   border-radius: 20px 20px 0 0!important;
 }
+
+.options {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0 0 20px 20px
+}
+
+.options li, .options li button {
+  background-color: #f3f4f6!important;
+  border-radius: 20px;
+  font-size: 1.2rem;
+}
+
 
 
 @keyframes fade-in {
