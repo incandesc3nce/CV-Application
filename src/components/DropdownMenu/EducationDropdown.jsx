@@ -1,5 +1,4 @@
-import { EducationForm } from "../EducationForm/EducationForm";
-import { AddEducation, EducationOptions } from "./EducationOptions";
+import { EducationOptions } from "./EducationOptions";
 import "../styles/dropdownMenu.css";
 
 export function EducationDropdown({ educations, setEducations }) {
@@ -10,7 +9,10 @@ export function EducationDropdown({ educations, setEducations }) {
     form.classList.add("hidden");
     document.querySelector(".edu_btn").classList.toggle("plain-corners");
 
-    if (!options.classList.contains("hidden") || !form.classList.contains("hidden")) {
+    if (
+      !options.classList.contains("hidden") ||
+      !form.classList.contains("hidden")
+    ) {
       document.querySelector(".edu_btn").classList.add("plain-corners");
     }
   };
@@ -25,7 +27,6 @@ export function EducationDropdown({ educations, setEducations }) {
           educations={educations}
           setEducations={setEducations}
         />
-        
       </div>
     </section>
   );

@@ -1,10 +1,15 @@
 import "../styles/form.css";
 
-export function EducationForm({ education, setEducation, selected, setSelected }) {
+export function EducationForm({
+  education,
+  setEducation,
+  selected,
+  setSelected,
+}) {
   const handleSubmit = (e) => {
     e.preventDefault();
     document.querySelector(".education-form").classList.add("hidden");
-    document.querySelector('.edu_btn').classList.remove('plain-corners');
+    document.querySelector(".edu_btn").classList.remove("plain-corners");
   };
 
   const handleChange = (e) => {
