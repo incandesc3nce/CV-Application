@@ -3,12 +3,14 @@ form {
   flex-direction: column;
   gap: 0.5rem;
   max-width: 400px;
+
+  background-color: #fff;
 }
 
 input, textarea {
   border-radius: 15px;
   border: none;
-  background-color: #e5e5e5;
+  background-color: #f3f4f6;
 
   font-family: inherit;
   font-size: inherit;
@@ -46,4 +48,8 @@ input:focus {
 textarea {
   min-height: 200px;
   max-width: 400px;
+}
+
+.hidden {
+  display: none;
 }
