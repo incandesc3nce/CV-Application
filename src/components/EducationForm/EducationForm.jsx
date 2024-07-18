@@ -1,9 +1,16 @@
 import "../styles/form.css";
 
-export function EducationForm() {
+export function EducationForm({ education, setEducation, selected }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert("Form submitted");
+  };
+
+  const handleChange = (e) => {
+    const updatedEducation = { ...selected, [e.target.name]: e.target.value };
+    const updatedEducations = [...education];
+    updatedEducations[education.indexOf(selected)] = updatedEducation;
+    setEducation(updatedEducations);
   };
 
   return (
@@ -14,7 +21,9 @@ export function EducationForm() {
           type="text"
           name="school"
           id="school"
-          placeholder="Wayne College"
+          value={selected ? selected.school : ""}
+          onChange={handleChange}
+          placeholder="MIT"
           required
         />
       </div>
@@ -24,6 +33,8 @@ export function EducationForm() {
           type="text"
           name="degree"
           id="degree"
+          value={selected ? selected.degree : ""}
+          onChange={handleChange}
           placeholder="Bachelor of Science"
           required
         />
@@ -35,6 +46,8 @@ export function EducationForm() {
             type="text"
             name="startDate"
             id="startDate"
+            value={selected ? selected.startDate : ""}
+            onChange={handleChange}
             placeholder="mm/yyyy"
             required
           />
@@ -45,6 +58,8 @@ export function EducationForm() {
             type="text"
             name="endDate"
             id="endDate"
+            value={selected ? selected.endDate : ""}
+            onChange={handleChange}
             placeholder="mm/yyyy"
             required
           />
@@ -56,6 +71,8 @@ export function EducationForm() {
           type="text"
           name="location"
           id="location"
+          value={selected ? selected.location : ""}
+          onChange={handleChange}
           placeholder="Enter Location"
           required
         />

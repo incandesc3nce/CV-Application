@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 import { GeneralForm } from "./components/GeneralForm/GeneralForm";
 import { EducationDropdown } from "./components/DropdownMenu/EducationDropdown";
 import { ExperienceDropdown } from "./components/DropdownMenu/ExperienceDropdown";
@@ -60,7 +59,10 @@ function App() {
             location={{ location, setLocation }}
           />
         </section>
-        <EducationDropdown />
+        <EducationDropdown
+          educations={education}
+          setEducations={setEducation}
+        />
         <ExperienceDropdown />
       </div>
       <div className="cv-wrapper">
