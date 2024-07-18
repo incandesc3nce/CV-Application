@@ -8,7 +8,7 @@ export function ExperienceDropdown() {
 
   return (
     <section className="dropdown-menu">
-      <button onClick={toggleForm}>Experience</button>
+      <button onClick={toggleForm}><h2>Experience</h2></button>
       <div className="dropdown-form">
         <ExperienceForm />
       </div>

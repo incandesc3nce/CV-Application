@@ -8,7 +8,7 @@ export function EducationDropdown() {
 
   return (
     <section className="dropdown-menu">
-      <button onClick={toggleForm}>Education</button>
+      <button onClick={toggleForm}><h2>Education</h2></button>
       <div className="dropdown-form">
         <EducationForm />
       </div>
