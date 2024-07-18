@@ -1,5 +1,3 @@
-import "./GeneralForm.css";
-
 export function GeneralForm() {
   return (
     <form className="general-form">

@@ -1,5 +1,3 @@
-import "./ExperienceForm.css";
-
 export function ExperienceForm() {
   return (
     <form className="experience-form">
