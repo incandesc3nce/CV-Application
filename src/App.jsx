@@ -63,7 +63,10 @@ function App() {
           educations={education}
           setEducations={setEducation}
         />
-        <ExperienceDropdown />
+        <ExperienceDropdown
+          experience={experience}
+          setExperience={setExperience}
+        />
       </div>
       <div className="cv-wrapper">
         <CV
