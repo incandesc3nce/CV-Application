@@ -1,0 +1,60 @@
+.cv-container {
+  width: 21cm;
+  height: 29.7cm;
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  padding: 1rem;
+  
+  color: #e7e7e7;
+  background-color: #2455af;
+}
+
+header h2 {
+  font-size: 2.5rem;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  
+  margin-top: 0.5rem;
+}
+
+.info svg {
+  width: 1.2rem;
+  height: auto;
+  fill: #e7e7e7;
+}
+
+.info p {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column; 
+}
+
+.heading {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.heading h3 {
+  background-color: #0e374e12;
+  width: 90%;
+  text-align: center;
+  margin-top: 3rem;
+}
