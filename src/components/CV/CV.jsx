@@ -1,4 +1,6 @@
 import "../styles/cv.css";
+import { Education } from "./Education";
+import { Experience } from "./Experience";
 
 export function CV(props) {
   return (
@@ -34,16 +36,35 @@ export function CV(props) {
           <div className="heading">
             <h3>Education</h3>
           </div>
-          <div className="edu">
-
-          </div>
+          <ul className="edu">
+            {props.education.map((edu) => (
+              <Education
+                key={edu.school}
+                school={edu.school}
+                degree={edu.degree}
+                startDate={edu.startDate}
+                endDate={edu.endDate}
+                location={edu.location}
+              />
+            ))}
+          </ul>
         </div>
         <div className="exp-info">
           <div className="heading">
             <h3>Professional Experience</h3>
           </div>
           <div className="exp">
-
+            {props.experience.map((exp) => (
+              <Experience
+                key={exp.position}
+                position={exp.position}
+                company={exp.company}
+                startDate={exp.startDate}
+                endDate={exp.endDate}
+                location={exp.location}
+                description={exp.description}
+              />
+            ))}
           </div>
         </div>
       </main>
