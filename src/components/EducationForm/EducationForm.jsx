@@ -3,7 +3,8 @@ import "../styles/form.css";
 export function EducationForm({ education, setEducation, selected }) {
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Form submitted");
+    document.querySelector(".education-form").classList.add("hidden");
+    document.querySelector('.edu_btn').classList.remove('plain-corners');
   };
 
   const handleChange = (e) => {

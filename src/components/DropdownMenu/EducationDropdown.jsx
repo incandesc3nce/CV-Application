@@ -4,14 +4,15 @@ import "../styles/dropdownMenu.css";
 
 export function EducationDropdown({ educations, setEducations }) {
   const toggleOptions = () => {
+    const options = document.querySelector(".options");
     const form = document.querySelector(".education-form");
-    if (form.classList.contains("hidden")) {
-      document.querySelector(".options").classList.remove("hidden");
-    } else {
-      document.querySelector(".options").classList.add("hidden");
-    }
-    document.querySelector(".education-form").classList.add("hidden");
+    options.classList.toggle("hidden");
+    form.classList.add("hidden");
     document.querySelector(".edu_btn").classList.toggle("plain-corners");
+
+    if (!options.classList.contains("hidden") || !form.classList.contains("hidden")) {
+      document.querySelector(".edu_btn").classList.add("plain-corners");
+    }
   };
 
   return (
