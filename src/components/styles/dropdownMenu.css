@@ -4,7 +4,7 @@
 
   background-color: #fff;
   border: none;
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 0.5rem;
 
   cursor: pointer;
@@ -13,16 +13,17 @@
 .dropdown-form {
   background-color: #fff;
   
-  border-radius: 0 0 20px 20px;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   max-width: 400px;
+  border-radius: 0 0 20px 20px;
 }
 
 .education-form, .experience-form {
   animation: fade-in 0.2s ease-out;
   padding: 1rem;
+  border-radius: 0 0 20px 20px;
 }
 
 .hidden {
