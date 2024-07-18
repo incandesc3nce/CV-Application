@@ -25,6 +25,12 @@ export function GeneralForm() {
           value="(123)456-7890"
           placeholder="Enter your phone number"
         />
+        <label htmlFor="gen_location">Location</label>
+        <input
+          type="text"
+          value="Gotham City, US"
+          placeholder="City, Country"
+        />
       </form>
     </>
   );
