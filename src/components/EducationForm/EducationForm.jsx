@@ -1,6 +1,6 @@
 import "../styles/form.css";
 
-export function EducationForm({ education, setEducation, selected }) {
+export function EducationForm({ education, setEducation, selected, setSelected }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     document.querySelector(".education-form").classList.add("hidden");
@@ -12,6 +12,7 @@ export function EducationForm({ education, setEducation, selected }) {
     const updatedEducations = [...education];
     updatedEducations[education.indexOf(selected)] = updatedEducation;
     setEducation(updatedEducations);
+    setSelected(updatedEducation);
   };
 
   return (

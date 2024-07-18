@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { EducationForm } from "../EducationForm/EducationForm";
 
 export function AddEducation({educations, setEducations}) {
@@ -17,9 +18,9 @@ export function AddEducation({educations, setEducations}) {
 }
 
 export function EducationOptions({educations = [], setEducations}) {
-  let selectedEducation = educations[0];
+  const [selectedEducation, setSelectedEducation] = useState(educations[0]);
   const handleSelect = (e) => {
-    selectedEducation = educations.find((education) => education.school === e.target.textContent);
+    setSelectedEducation(educations.find((education) => education.school === e.target.textContent));
     document.querySelector('.options').classList.add('hidden');
     document.querySelector('.education-form').classList.remove('hidden');
   }
@@ -35,7 +36,7 @@ export function EducationOptions({educations = [], setEducations}) {
       ))}
       <AddEducation educations={educations} setEducations={setEducations} />
     </ul>
-    <EducationForm education={educations} setEducation={setEducations} selected={selectedEducation} />
+    <EducationForm education={educations} setEducation={setEducations} selected={selectedEducation} setSelected={setSelectedEducation} />
     </>
   );
 }
