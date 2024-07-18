@@ -7,7 +7,7 @@ form {
   background-color: #fff;
 }
 
-input, textarea {
+input, textarea, button[type="submit"] {
   border-radius: 15px;
   border: none;
   background-color: #f3f4f6;
@@ -16,12 +16,17 @@ input, textarea {
   font-size: inherit;
 }
 
-input {
+button[type="submit"] {
+  background-color: #3766bd!important;
+  color: #fff;
+}
+
+input, button[type="submit"] {
   max-width: 100%;
   padding: 0.5rem;
 }
 
-input:focus {
+input:focus, textarea:focus {
   outline: 2px solid #3f87ec;
 }
 
