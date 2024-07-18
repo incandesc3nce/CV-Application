@@ -85,7 +85,7 @@ export function EducationForm({
         />
       </div>
       <button type="submit" onClick={handleSubmit}>
-        Add
+        Done
       </button>
     </form>
   );
