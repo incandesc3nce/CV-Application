@@ -1,4 +1,5 @@
 import { EducationForm } from "../EducationForm/EducationForm";
+import '../styles/dropdownMenu.css';
 
 export function EducationDropdown() {
   const toggleForm = () => {

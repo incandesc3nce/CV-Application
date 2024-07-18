@@ -1,4 +1,5 @@
 import { ExperienceForm } from "../ExperienceForm/ExperienceForm";
+import '../styles/dropdownMenu.css';
 
 export function ExperienceDropdown() {
   const toggleForm = () => {

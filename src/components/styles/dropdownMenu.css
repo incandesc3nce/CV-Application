@@ -1,0 +1,17 @@
+.dropdown-menu button {
+  max-width: 400px;
+  width: 100%;
+
+  background-color: #f3f4f6;
+  border: none;
+  border-radius: 15px;
+  padding: 0.5rem;
+}
+
+.dropdown-form {
+  margin-top: 1rem;
+}
+
+.hidden {
+  display: none;
+}
