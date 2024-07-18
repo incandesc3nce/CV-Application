@@ -11,6 +11,10 @@ export function ExperienceForm() {
         />
       </div>
       <div className="input-field">
+        <label htmlFor="location">Location</label>
+        <input type="text" name="location" placeholder="USA" required />
+      </div>
+      <div className="input-field">
         <label htmlFor="position">Position Title</label>
         <input
           type="text"
@@ -22,11 +26,11 @@ export function ExperienceForm() {
       <div className="date-form">
         <div className="date-input">
           <label htmlFor="startDate">Start Date</label>
-          <input type="date" name="startDate" required />
+          <input type="text" name="startDate" required />
         </div>
         <div className="date-input">
           <label htmlFor="endDate">End Date</label>
-          <input type="date" name="endDate" required />
+          <input type="text" name="endDate" required />
         </div>
       </div>
       <div className="input-field">
