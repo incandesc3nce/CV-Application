@@ -17,17 +17,12 @@ export function AddEducation({
             startDate: "",
             endDate: "",
             location: "",
-          }
-          
-          setEducations([
-            ...educations,
-            newEducation,
-          ]);
+          };
+
+          setEducations([...educations, newEducation]);
           document.querySelector(".education-form").classList.remove("hidden");
           document.querySelector(".options").classList.add("hidden");
-          setSelected(
-            newEducation
-          )
+          setSelected(newEducation);
         }}>
         + Add Education
       </button>
@@ -44,12 +39,31 @@ export function EducationOptions({ educations = [], setEducations }) {
     document.querySelector(".options").classList.add("hidden");
     document.querySelector(".education-form").classList.remove("hidden");
   };
+
+  function DeleteEducation({ education = "" }) {
+    const handleDelete = () => {
+      setSelectedEducation(null);
+      setEducations(
+        educations.filter((listEducation) => listEducation !== education)
+      );
+      document.querySelector(".education-form").classList.add("hidden");
+      document.querySelector(".options").classList.remove("hidden");
+    };
+
+    return (
+      <>
+        <button onClick={handleDelete}>X</button>
+      </>
+    );
+  }
+
   return (
     <>
       <ul className="options hidden">
         {educations.map((education, index) => (
           <li key={index}>
             <button onClick={handleSelect}>{education.school}</button>
+            <DeleteEducation education={education} />
           </li>
         ))}
         <AddEducation
