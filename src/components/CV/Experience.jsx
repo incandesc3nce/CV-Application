@@ -11,7 +11,7 @@ export function Experience({
       <div className="job-info">
         <div className="job-date">
           <p>
-            {startDate} - {endDate}
+            {startDate} {startDate && endDate ? "-" : ""} {endDate}
           </p>
           <p>{location}</p>
         </div>

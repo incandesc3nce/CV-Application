@@ -8,9 +8,9 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   padding: 1rem;
-  
+
   color: #e7e7e7;
   background-color: #2455af;
 }
@@ -23,7 +23,7 @@ header h2 {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  
+
   margin-top: 0.5rem;
 }
 
@@ -42,7 +42,7 @@ header h2 {
 
 main {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 .heading {
@@ -57,11 +57,13 @@ main {
   text-align: center;
   margin: 2rem 0;
 }
-.edu-info, .exp-info {
+.edu-info,
+.exp-info {
   padding: 0 5%;
 }
 
-.edu, .exp {
+.edu,
+.exp {
   width: 100%;
   list-style: none;
   display: flex;
@@ -71,11 +73,13 @@ main {
   font-size: 1.1rem;
 }
 
-.degree-date {
+.degree-date,
+.job-date {
   min-width: 170px;
 }
 
-.degree, .job {
+.degree,
+.job {
   width: 100%;
   display: flex;
   gap: 2rem;

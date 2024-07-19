@@ -12,7 +12,7 @@
 
 .dropdown-form {
   background-color: #fff;
-  
+
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -20,45 +20,52 @@
   border-radius: 0 0 20px 20px;
 }
 
-.education-form, .experience-form {
+.education-form,
+.experience-form {
   animation: fade-in 0.2s ease-out;
   padding: 1rem;
   border-radius: 0 0 20px 20px;
 }
 
 .hidden {
-  display: none!important;
+  display: none !important;
 }
 
 .plain-corners {
-  border-radius: 20px 20px 0 0!important;
+  border-radius: 20px 20px 0 0 !important;
 }
 
-.options, .options-exp {
+.options,
+.options-exp {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   padding: 0.5rem;
-  border-radius: 0 0 20px 20px
+  border-radius: 0 0 20px 20px;
 }
 
-.options li, .select-edu, .select-exp {
+.options li,
+.select-edu,
+.select-exp {
   border-radius: 20px;
   font-size: 1.2rem;
 }
 
-.select-edu, .select-exp {
-  background-color: #f3f4f6!important;
+.select-edu,
+.select-exp {
+  background-color: #f3f4f6 !important;
 }
 
-.options li, .options-exp li {
+.options li,
+.options-exp li {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.delete-edu, .delete-exp {
+.delete-edu,
+.delete-exp {
   border-radius: 50%;
   --size: 40px;
   width: var(--size);

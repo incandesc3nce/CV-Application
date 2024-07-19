@@ -35,7 +35,9 @@ export function ExperienceOptions({ experiences = [], setExperiences }) {
   const [selectedExperience, setSelectedExperience] = useState(experiences[0]);
   const handleSelect = (e) => {
     setSelectedExperience(
-      experiences.find((experience) => experience.company === e.target.textContent)
+      experiences.find(
+        (experience) => experience.company === e.target.textContent
+      )
     );
     document.querySelector(".options-exp").classList.add("hidden");
     document.querySelector(".experience-form").classList.remove("hidden");
@@ -53,7 +55,9 @@ export function ExperienceOptions({ experiences = [], setExperiences }) {
 
     return (
       <>
-        <button className="delete-exp" onClick={handleDelete}>X</button>
+        <button className="delete-exp" onClick={handleDelete}>
+          X
+        </button>
       </>
     );
   }
@@ -64,25 +68,26 @@ export function ExperienceOptions({ experiences = [], setExperiences }) {
         {experiences.map((experience, index) => (
           <li key={index}>
             <button className="select-exp" onClick={handleSelect}>
-              {experience.company}</button>
+              {experience.company}
+            </button>
             <DeleteExperience experience={experience} />
           </li>
         ))}
 
         <AddExperience
-          experience={experiences}
-          setExperience={setExperiences}
+          experiences={experiences}
+          setExperiences={setExperiences}
           selected={selectedExperience}
           setSelected={setSelectedExperience}
         />
       </ul>
 
-      <ExperienceForm 
+      <ExperienceForm
         experience={experiences}
         setExperience={setExperiences}
         selected={selectedExperience}
         setSelected={setSelectedExperience}
       />
     </>
-  )
+  );
 }
