@@ -43,13 +43,33 @@
   border-radius: 0 0 20px 20px
 }
 
-.options li, .options li button {
-  background-color: #f3f4f6!important;
+.options li, .select-edu {
   border-radius: 20px;
   font-size: 1.2rem;
 }
 
+.select-edu {
+  background-color: #f3f4f6!important;
+}
 
+.options li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.delete-edu {
+  border-radius: 50%;
+  --size: 40px;
+  width: var(--size);
+  height: calc(var(--size) - 5px);
+
+  border: 2px solid red;
+  background-color: red;
+  color: #f3f4f6;
+
+  cursor: pointer;
+}
 
 @keyframes fade-in {
   from {

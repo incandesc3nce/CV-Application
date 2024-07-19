@@ -52,7 +52,7 @@ export function EducationOptions({ educations = [], setEducations }) {
 
     return (
       <>
-        <button onClick={handleDelete}>X</button>
+        <button className="delete-edu" onClick={handleDelete}>X</button>
       </>
     );
   }
@@ -62,7 +62,7 @@ export function EducationOptions({ educations = [], setEducations }) {
       <ul className="options hidden">
         {educations.map((education, index) => (
           <li key={index}>
-            <button onClick={handleSelect}>{education.school}</button>
+            <button className="select-edu" onClick={handleSelect}>{education.school}</button>
             <DeleteEducation education={education} />
           </li>
         ))}
